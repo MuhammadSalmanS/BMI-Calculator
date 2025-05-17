@@ -1,27 +1,19 @@
-🧮 BMI Calculator
+from flask import Flask, render_template, request
 
-This is a simple Body Mass Index (BMI) Calculator project developed using Python on VS Code. The application takes a user's weight and height as input and calculates the BMI to determine the corresponding weight category (Underweight, Normal, Overweight, or Obese).
+app= Flask(__name__)
 
-🚀 Features
+@app.route('/')
 
-Input validation for height and weight
+def home():
+    return render_template('Bmical.html')
+    
+@app.route('/submit', methods=['POST'])
 
-BMI calculation using the standard formula
+def submit():
+    Height=float(request.form['Height'])
+    Weight=float(request.form['Weight'])
+    BMI= Weight/ (Height * Height)
 
-Displays the BMI value and health category
-
-Simple and beginner-friendly Python project
-
-📌 Formula Used
-
-BMI = weight (kg) / (height (m) * height (m))
-
-💡 BMI Categories:
-
-Underweight: BMI < 18.5
-
-Normal weight: 18.5 ≤ BMI < 24.9
-
-Overweight: 25 ≤ BMI < 29.9
-
-Obesity: BMI ≥ 30
+    return f"Your body Mass Index is {BMI}"
+if __name__ == '__main__':
+    app.run(debug=True)
