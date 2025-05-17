@@ -35,7 +35,7 @@ BMI = weight (kg) / (height (m) * height (m))
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MuhammadSalmanS/bmi-calculator.git
+   git clone https://github.com/MuhammadSalmanS?tab=repositories
 cd bmi-calculator
 python bmi_calculator.py
 ---
