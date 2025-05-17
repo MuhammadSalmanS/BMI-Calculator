@@ -60,7 +60,7 @@ Practicing basic logic and conditional statements
 ## 👨‍💻 Developed By
 
 **MuhammadSalmanS**  
-📧 [Connect on LinkedIn](www.linkedin.com/in/muhammad-salman-50685b324)
+📧 [Connect on LinkedIn]([https://www.linkedin.com/in/muhammad-salman-50685b324/])
 
 ---
 
